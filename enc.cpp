@@ -397,7 +397,7 @@ int main()
 		mpp_packet_deinit(&packet);
 	}
 
-	cv::Mat bgr_frame = cv::imread("/home/firefly/Project/mpp_encoder_test/image.jpg");
+	cv::Mat bgr_frame = cv::imread("image.jpg");
 	cv::resize(bgr_frame, bgr_frame, cv::Size(cfg_frame_width, cfg_frame_height), 0, 0, cv::INTER_LINEAR);
 	std::cout<<"MPP_ALIGN(cfg_hor_stride, 64):"<<MPP_ALIGN(cfg_hor_stride, 64)<<"\n";
 	std::cout<<"MPP_ALIGN(cfg_ver_stride, 64):"<<MPP_ALIGN(cfg_ver_stride, 64)<<"\n";
